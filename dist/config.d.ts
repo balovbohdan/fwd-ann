@@ -6,7 +6,7 @@ declare const config: Readonly<{
                 offset: number;
                 needOffset: boolean;
                 needNormalize: boolean;
-                normalizer: (signals: import("./lib/signals").Signals) => import("./lib/signals").Signals;
+                normalizer: (signals: import(".").Signals) => import(".").Signals;
             };
         };
     };

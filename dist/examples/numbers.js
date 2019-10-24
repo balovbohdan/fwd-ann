@@ -15,7 +15,8 @@ var ann_1 = require("../lib/ann");
 var signals_1 = require("../lib/signals");
 var teacher_1 = require("../lib/teacher");
 var layers_1 = require("../lib/layers");
-var activation_funcs_1 = require("../lib/activation-funcs/activation-funcs");
+var activation_funcs_1 = require("../lib/activation-funcs");
+var ReLU = activation_funcs_1.activationFuncs.ReLU;
 var config = {
     ann: {
         params: {
@@ -28,21 +29,21 @@ var config = {
                     type: layers_1.LayerType.INPUT,
                     unitsData: [{
                             num: 6,
-                            ActivationFunction: activation_funcs_1.ReLU,
+                            ActivationFunction: ReLU,
                         }],
                 },
                 {
                     type: layers_1.LayerType.HIDDEN,
                     unitsData: [{
                             num: 7,
-                            ActivationFunction: activation_funcs_1.ReLU,
+                            ActivationFunction: ReLU,
                         }],
                 },
                 {
                     type: layers_1.LayerType.OUTPUT,
                     unitsData: [{
                             num: 1,
-                            ActivationFunction: activation_funcs_1.ReLU,
+                            ActivationFunction: ReLU,
                         }],
                 },
             ],

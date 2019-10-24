@@ -2,7 +2,9 @@ import createANN from '../lib/ann';
 import { Signals } from '../lib/signals';
 import { Teacher } from '../lib/teacher';
 import { LayerType } from '../lib/layers';
-import { ReLU } from '../lib/activation-funcs/activation-funcs';
+import { activationFuncs } from '../lib/activation-funcs';
+
+const { ReLU } = activationFuncs;
 
 const config = {
     ann: {
