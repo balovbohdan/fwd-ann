@@ -16,14 +16,19 @@ your console. Better way to understand how this library works is to explore thes
 Another good way to understand this library — explore `src` library and create
 small projects. Feel free to create anything you want using this library!
 
+Below you can find short introduction to the API. It will help you to get
+started with `fwd-ann`.
+
 
 # API
 
 ## LayerType
 This `enum` represents possible types of ANN's layers. There are three possible types:
+
 * INPUT
 * HIDDEN
 * OUTPUT
+
 These types are used to create ANN's instance with aim architecture.
 
 ## activationFuncs
