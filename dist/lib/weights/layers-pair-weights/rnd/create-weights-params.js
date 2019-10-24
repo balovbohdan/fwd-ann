@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var object_utils_1 = require("../../../../utils/object-utils");
 var calcUnitsQty = function (data) {
-    return data.unitsData.reduce(function (sum, item) { return sum + item.num; }, 0);
+    return data.unitsData.reduce(function (sum, item) { return sum + item.qty; }, 0);
 };
 var prepareRndWeightParams = function (leftUnitsQty, params) {
     if (params === void 0) { params = {}; }

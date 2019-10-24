@@ -1,4 +1,7 @@
-## Unreleased - [DIFF](https://github.com/balovbohdan/fwd-ann/compare/v1.0.1...HEAD)
+## Unreleased - [DIFF](https://github.com/balovbohdan/fwd-ann/compare/v2.0.0...HEAD)
+
+## 2.0.0 - 2019-10-24 - [DIFF](https://github.com/balovbohdan/fwd-ann/compare/v1.0.1...v2.0.0)
+- Changed prop name `num` to `qty` on `unitsData`
 
 ## 1.0.1 - 2019-10-24 - [DIFF](https://github.com/balovbohdan/fwd-ann/compare/v1.0.0...v1.0.1)
 - Updated `README.md`

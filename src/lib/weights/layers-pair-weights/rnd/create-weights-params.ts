@@ -10,7 +10,7 @@ type Data = {
 };
 
 const calcUnitsQty = (data:LayerData):number =>
-    data.unitsData.reduce((sum, item) => sum + item.num, 0);
+    data.unitsData.reduce((sum, item) => sum + item.qty, 0);
 
 const prepareRndWeightParams = (leftUnitsQty, params:RndWeightParams = {}):RndWeightParams =>
     assignDeep(params, { leftUnitsQty });

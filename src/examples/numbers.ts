@@ -17,21 +17,21 @@ const config = {
                 {
                     type: LayerType.INPUT,
                     unitsData: [{
-                        num: 6,
+                        qty: 6,
                         ActivationFunction: ReLU,
                     }],
                 },
                 {
                     type: LayerType.HIDDEN,
                     unitsData: [{
-                        num: 7,
+                        qty: 7,
                         ActivationFunction: ReLU,
                     }],
                 },
                 {
                     type: LayerType.OUTPUT,
                     unitsData: [{
-                        num: 1,
+                        qty: 1,
                         ActivationFunction: ReLU,
                     }],
                 },

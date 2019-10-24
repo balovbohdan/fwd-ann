@@ -28,21 +28,21 @@ var config = {
                 {
                     type: layers_1.LayerType.INPUT,
                     unitsData: [{
-                            num: 6,
+                            qty: 6,
                             ActivationFunction: ReLU,
                         }],
                 },
                 {
                     type: layers_1.LayerType.HIDDEN,
                     unitsData: [{
-                            num: 7,
+                            qty: 7,
                             ActivationFunction: ReLU,
                         }],
                 },
                 {
                     type: layers_1.LayerType.OUTPUT,
                     unitsData: [{
-                            num: 1,
+                            qty: 1,
                             ActivationFunction: ReLU,
                         }],
                 },

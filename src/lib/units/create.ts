@@ -6,7 +6,7 @@ import {LayerType} from '../layers';
 import { ActivationFunction } from '../activation-funcs';
 
 export type SingleData = {
-    num:number;
+    qty:number;
     names?:Array<string>;
     ActivationFunction:ActivationFunction;
 };
@@ -21,7 +21,7 @@ const createSingleData = (data:SingleData):T.UnitsData => {
     const units:Array<Unit> = [];
     const names = data.names || [];
 
-    for (let i = 0; i < data.num; i++) {
+    for (let i = 0; i < data.qty; i++) {
         units.push(
             new Unit({
                 name: names[i],

@@ -5,7 +5,7 @@ var Units_1 = require("./Units");
 var createSingleData = function (data) {
     var units = [];
     var names = data.names || [];
-    for (var i = 0; i < data.num; i++) {
+    for (var i = 0; i < data.qty; i++) {
         units.push(new Unit_1.Unit({
             name: names[i],
             ActivationFunction: data.ActivationFunction,
