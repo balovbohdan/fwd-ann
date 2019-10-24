@@ -7,7 +7,7 @@ import { clone } from '../../utils/object-utils';
 const { SingleColMatrixFactory } = matrixFactories;
 
 export class Signals {
-    static makeInst(signals:Array<number>, names:Array<string> = []) {
+    static create(signals:Array<number>, names:Array<string> = []) {
         const signalsMatrix = SingleColMatrixFactory.create(signals);
 
         return new Signals(signalsMatrix, names);

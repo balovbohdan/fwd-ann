@@ -83,7 +83,7 @@ var Units = (function () {
             return unit.getActivationFunction()
                 .calc(input.get(i || 0));
         });
-        return signals_1.Signals.makeInst(outputSignals);
+        return signals_1.Signals.create(outputSignals);
     };
     return Units;
 }());

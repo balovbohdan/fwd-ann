@@ -62,20 +62,20 @@ var config = {
         data: {
             sets: [
                 {
-                    task: signals_1.Signals.makeInst([0, 0, 0, 0, 0, 0]),
-                    idealOutput: signals_1.Signals.makeInst([0]),
+                    task: signals_1.Signals.create([0, 0, 0, 0, 0, 0]),
+                    idealOutput: signals_1.Signals.create([0]),
                 },
                 {
-                    task: signals_1.Signals.makeInst([1, 1, 0, 0, 0, 0]),
-                    idealOutput: signals_1.Signals.makeInst([.1]),
+                    task: signals_1.Signals.create([1, 1, 0, 0, 0, 0]),
+                    idealOutput: signals_1.Signals.create([.1]),
                 },
                 {
-                    task: signals_1.Signals.makeInst([0, 0, 1, 1, 0, 0]),
-                    idealOutput: signals_1.Signals.makeInst([.2]),
+                    task: signals_1.Signals.create([0, 0, 1, 1, 0, 0]),
+                    idealOutput: signals_1.Signals.create([.2]),
                 },
                 {
-                    task: signals_1.Signals.makeInst([0, 0, 0, 0, 1, 1]),
-                    idealOutput: signals_1.Signals.makeInst([.3]),
+                    task: signals_1.Signals.create([0, 0, 0, 0, 1, 1]),
+                    idealOutput: signals_1.Signals.create([.3]),
                 },
             ],
         },
@@ -87,7 +87,7 @@ teacher_1.Teacher.teach(__assign({ ann: ann }, config.teacher.data), config.teac
     var ann = _a.ann;
     var _loop_1 = function (units) {
         var expectedOutput = units[0];
-        var input = signals_1.Signals.makeInst(units.slice(1));
+        var input = signals_1.Signals.create(units.slice(1));
         ann.calcOutput(input)
             .then(function (signals) {
             var output = Math.round(signals.getMatrix().get(0, 0) * 100) / 100;

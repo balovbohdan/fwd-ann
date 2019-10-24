@@ -1,7 +1,7 @@
 import { Matrix } from 'matrix-calculus';
 import { Mutator } from './mutators';
 export declare class Signals {
-    static makeInst(signals: Array<number>, names?: Array<string>): Signals;
+    static create(signals: Array<number>, names?: Array<string>): Signals;
     constructor(signals: Matrix, names?: Array<string>);
     getNames(): Array<string>;
     setNames(names: Array<string>): void;

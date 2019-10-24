@@ -83,7 +83,7 @@ export class Units {
                 .calc(input.get(i || 0))
         );
 
-        return Signals.makeInst(outputSignals);
+        return Signals.create(outputSignals);
     }
 
     private activateSignal = (signal:number, row:number):number => {

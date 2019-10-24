@@ -23,7 +23,7 @@ var Signals = (function () {
         this.signals = signals;
         this.names = names || [];
     }
-    Signals.makeInst = function (signals, names) {
+    Signals.create = function (signals, names) {
         if (names === void 0) { names = []; }
         var signalsMatrix = SingleColMatrixFactory.create(signals);
         return new Signals(signalsMatrix, names);

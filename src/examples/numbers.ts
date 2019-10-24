@@ -51,20 +51,20 @@ const config = {
         data: {
             sets: [
                 {
-                    task: Signals.makeInst([0, 0, 0, 0, 0, 0]),
-                    idealOutput: Signals.makeInst([0]),
+                    task: Signals.create([0, 0, 0, 0, 0, 0]),
+                    idealOutput: Signals.create([0]),
                 },
                 {
-                    task: Signals.makeInst([1, 1, 0, 0, 0, 0]),
-                    idealOutput: Signals.makeInst([.1]),
+                    task: Signals.create([1, 1, 0, 0, 0, 0]),
+                    idealOutput: Signals.create([.1]),
                 },
                 {
-                    task: Signals.makeInst([0, 0, 1, 1, 0, 0]),
-                    idealOutput: Signals.makeInst([.2]),
+                    task: Signals.create([0, 0, 1, 1, 0, 0]),
+                    idealOutput: Signals.create([.2]),
                 },
                 {
-                    task: Signals.makeInst([0, 0, 0, 0, 1, 1]),
-                    idealOutput: Signals.makeInst([.3]),
+                    task: Signals.create([0, 0, 0, 0, 1, 1]),
+                    idealOutput: Signals.create([.3]),
                 },
             ],
         },
@@ -77,7 +77,7 @@ Teacher.teach({ ann, ...config.teacher.data }, config.teacher.params)
     .then(({ ann }) => {
         for (let units of config.teacher.testSet) {
             const expectedOutput = units[0];
-            const input = Signals.makeInst(units.slice(1));
+            const input = Signals.create(units.slice(1));
 
             ann.calcOutput(input)
                 .then(signals => {
