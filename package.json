@@ -1,0 +1,41 @@
+{
+  "name": "fwd-ann",
+  "version": "0.0.1",
+  "description": "Feedforward Artificial Neural Network Library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "keywords": [
+    "ann",
+    "neural",
+    "network",
+    "artificial",
+    "neural",
+    "network",
+    "fwd ann",
+    "fwd-ann",
+    "calculations",
+    "calculus"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "matrix-calculus": "^2.0.6",
+    "math-funcs-calculus": "^2.0.3"
+  },
+  "devDependencies": {
+    "ts-node": "^8.4.1",
+    "typescript": "^3.3.1",
+    "tslint": "^5.11.0",
+    "@types/node": "^12.11.1",
+    "@types/core-js": "^2.5.2"
+  },
+  "author": {
+    "name": "balov_bohdan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/balovbohdan/fwd-ann"
+  }
+}
