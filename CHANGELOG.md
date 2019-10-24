@@ -1,4 +1,7 @@
-## Unreleased - [DIFF](https://github.com/balovbohdan/fwd-ann/compare/v1.0.0...HEAD)
+## Unreleased - [DIFF](https://github.com/balovbohdan/fwd-ann/compare/v1.0.1...HEAD)
+
+## 1.0.1 - 2019-10-24 - [DIFF](https://github.com/balovbohdan/fwd-ann/compare/v1.0.0...v1.0.1)
+- Updated `README.md`
 
 ## 1.0.0 - 2019-10-24 - [DIFF](https://github.com/balovbohdan/fwd-ann/compare/v0.0.3...v1.0.0)
 - Renamed `makeInst` method to `create` on `Signals` class

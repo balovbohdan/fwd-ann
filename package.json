@@ -1,6 +1,6 @@
 {
   "name": "fwd-ann",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Feedforward Artificial Neural Network Library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
